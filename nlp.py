@@ -84,7 +84,7 @@ clf.fit(xtrain_count, ytrain)
 predict = clf.predict_proba(xvalid_count)
 print('count/MultinomialNB logless: {}'.format(multiclass_logloss(yvalid, predict)))
 
-# SLOW and performs badly
+# SLOW and performs badly, skip
 # 
 # svd = decomposition.TruncatedSVD(n_components=200)
 # svd.fit(xtrain_tfidf)
